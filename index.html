@@ -1,0 +1,167 @@
+<!DOCTYPE Html> 
+<html> 
+<head> 
+	<link href="css.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="mengkun">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <title>CoolPay</title>
+	<script>
+	var setting = {
+        aliUrl: "https://qr.alipay.com/fkx11576jdjhe7fgwml9c83",  
+    }
+	//禁用右击
+    document.oncontextmenu = function () {
+		return false;
+	} 
+    //禁用f12
+	document.onkeydown = function () {
+		if (window.event && window.event.keyCode == 123) {
+			window.event.returnValue = false;
+		}
+	}
+	</script>
+</head>
+<body>
+<div class="code-item" id="code-zfb" style="background: linear-gradient(90deg,#20a0ff,#20b8ff);display:none">
+	<div id="ui-head" class="ui-panel ui-flex-pack-center ui-flex-align-center">
+    <img class="ui-qlogo" id="qlogo" src="" style="border-radius: 0px">
+    <div><h1><a style="background: linear-gradient(90deg,#20a0ff,#20b8ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></a></h1><h2 id="qnick"><a style="background: linear-gradient(90deg,#20a0ff,#20b8ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b></b></a></h2></div>
+  </div>
+  <div class="ui-box ui-panel ui-flex-align-center">
+    <div id="ui-content" class="ui-panel ui-flex-ver ui-flex-pack-center">
+      <div class="ui-tips"><a style="background: linear-gradient(90deg,#20a0ff,#20b8ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>请等待自动跳转</b></a></div>
+      <br>
+      <div class="ui-paytext"></div>
+      <div id="ui-setps" class="ui-panel ui-flex-pack-center">
+        <div>
+          <div class="ui-circle"><a style="background: linear-gradient(90deg,#20a0ff,#20b8ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>1</b></a></div>
+          <i class="icon iconfont icon-changan"></i>
+          <div class="ui-padtop10"><b>等待自动跳转</b></div>
+        </div>
+        <div>
+          <div class="ui-circle"><a style="background: linear-gradient(90deg,#20a0ff,#20b8ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>2</b></a></div>
+          <i class="icon iconfont icon-icon-check-solid"></i>
+          <div class="ui-padtop10"><b>输入金额支付</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    <div class="code-item" id="code-all" style="background: linear-gradient(90deg,#20a0ff,#20b8ff);display:none">
+	<div id="ui-head" class="ui-panel ui-flex-pack-center ui-flex-align-center">
+    <img class="ui-qlogo" id="qlogo" src="" style="border-radius: 0px">
+    <div><h1><a style="background: linear-gradient(90deg,#20a0ff,#20b8ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></a></h1><h2 id="qnick"><a style="background: linear-gradient(90deg,#20a0ff,#20b8ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b></b></a></h2></div>
+  </div>
+  <div class="ui-box ui-panel ui-flex-align-center">
+    <div id="ui-content" class="ui-panel ui-flex-ver ui-flex-pack-center">
+      <div class="ui-tips"><a style="background: linear-gradient(90deg,#20a0ff,#20b8ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>支持 微信/支付宝/QQ</b></a></div>
+      <br>
+      <div class="ui-qrcode"><div class="code-area">
+            <img id="page-url" src="">
+        </div></div>
+      <div class="ui-paytext"></div>
+      <div id="ui-setps" class="ui-panel ui-flex-pack-center">
+        <div>
+          <div class="ui-circle"><a style="background: linear-gradient(90deg,#20a0ff,#20b8ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>1</b></a></div>
+          <i class="icon iconfont icon-changan"></i>
+          <div class="ui-padtop10"><b>打开APP</b></div>
+        </div>
+        <div>
+          <div class="ui-circle"><a style="background: linear-gradient(90deg,#20a0ff,#20b8ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>2</b></a></div>
+          <i class="icon iconfont icon-erweima"></i>
+          <div class="ui-padtop10"><b>扫描二维码</b></div>
+        </div>
+        <div>
+          <div class="ui-circle"><a style="background: linear-gradient(90deg,#20a0ff,#20b8ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>3</b></a></div>
+          <i class="icon iconfont icon-icon-check-solid"></i>
+          <div class="ui-padtop10"><b>输入金额支付</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    <div class="code-item" id="code-qq" style="background: linear-gradient(90deg,#E51F1F,#B81A1A);display:none">
+       <div id="ui-head" class="ui-panel ui-flex-pack-center ui-flex-align-center">
+    <img class="ui-qlogo" id="qlogo" src="" style="border-radius: 0px">
+    <div><h1><a style="background: linear-gradient(90deg,#E51F1F,#B81A1A);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></a></h1><h2 id="qnick"><a style="background: linear-gradient(90deg,#E51F1F,#B81A1A);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b></b></a></h2></div>
+  </div>
+  <div class="ui-box ui-panel ui-flex-align-center">
+    <div id="ui-content" class="ui-panel ui-flex-ver ui-flex-pack-center">
+      <div class="ui-tips"><a style="background: linear-gradient(90deg,#E51F1F,#B81A1A);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>长按扫码支付</b></a></div>
+      <br>
+      <div class="ui-qrcode"><div class="code-area">
+            <img id="page-url" src="data:image/png;base64,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">
+        </div></div>
+      <div class="ui-paytext"></div>
+      <div id="ui-setps" class="ui-panel ui-flex-pack-center">
+        <div>
+          <div class="ui-circle"><a style="background: linear-gradient(90deg,#E51F1F,#B81A1A);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>1</b></a></div>
+          <i class="icon iconfont icon-changan"></i>
+          <div class="ui-padtop10"><b>长按二维码</b></div>
+        </div>
+        <div>
+          <div class="ui-circle"><a style="background: linear-gradient(90deg,#E51F1F,#B81A1A);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>2</b></a></div>
+          <i class="icon iconfont icon-erweima"></i>
+          <div class="ui-padtop10"><b>扫描二维码</b></div>
+        </div>
+        <div>
+          <div class="ui-circle"><a style="background: linear-gradient(90deg,#E51F1F,#B81A1A);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>3</b></a></div>
+          <i class="icon iconfont icon-icon-check-solid"></i>
+          <div class="ui-padtop10"><b>输入金额支付</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    <div class="code-item" id="code-wechat" style="background: linear-gradient(90deg,#44AF35,#378F2B);display:none">
+        <div id="ui-head" class="ui-panel ui-flex-pack-center ui-flex-align-center">
+    <img class="ui-qlogo" id="qlogo" src="" style="border-radius: 0px">
+    <div><h1><a style="background: linear-gradient(90deg,#44AF35,#378F2B);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"></a></h1><h2 id="qnick"><a style="background: linear-gradient(90deg,#44AF35,#378F2B);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b></b></a></h2></div>
+  </div>
+  <div class="ui-box ui-panel ui-flex-align-center">
+    <div id="ui-content" class="ui-panel ui-flex-ver ui-flex-pack-center">
+      <div class="ui-tips"><a style="background: linear-gradient(90deg,#44AF35,#378F2B);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>长按扫码支付</b></a></div>
+      <br>
+      <div class="ui-qrcode"><div class="code-area">
+            <img id="page-url" src="data:image/png;base64,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">
+        </div></div>
+      <div class="ui-paytext"></div>
+      <div id="ui-setps" class="ui-panel ui-flex-pack-center">
+        <div>
+          <div class="ui-circle"><a style="background: linear-gradient(90deg,#44AF35,#378F2B);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>1</b></a></div>
+          <i class="icon iconfont icon-changan"></i>
+          <div class="ui-padtop10"><b>长按二维码</b></div>
+        </div>
+        <div>
+          <div class="ui-circle"><a style="background: linear-gradient(90deg,#44AF35,#378F2B);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>2</b></a></div>
+          <i class="icon iconfont icon-erweima"></i>
+          <div class="ui-padtop10"><b>识别图中二维码</b></div>
+        </div>
+        <div>
+          <div class="ui-circle"><a style="background: linear-gradient(90deg,#44AF35,#378F2B);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>3</b></a></div>
+          <i class="icon iconfont icon-icon-check-solid"></i>
+          <div class="ui-padtop10"><b>输入金额支付</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    <script>
+    if(navigator.userAgent.match(/Alipay/i)) { 
+	document.getElementById("code-zfb").style.display = "block";
+	setTimeout(window.location.href=setting.aliUrl,3);
+    } else if(navigator.userAgent.match(/MicroMessenger\//i)) {
+        document.getElementById("code-wechat").style.display = "block";
+    } else if(navigator.userAgent.match(/QQ\//i)) {
+        document.getElementById("code-qq").style.display = "block";
+    } else {
+        document.getElementById("code-all").style.display = "block";
+    }
+    </script>
+</body>
+</html>
